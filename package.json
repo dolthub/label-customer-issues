@@ -1,0 +1,38 @@
+{
+  "name": "label-customer-issues",
+  "version": "1.0.0",
+  "description": "A GitHub action to label customer issues and contributions.",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc && ncc build lib/main.js -o dist",
+    "format": "prettier --write **/*.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dolthub/label-customer-issues.git"
+  },
+  "author": "DoltHub",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/dolthub/label-customer-issues/issues"
+  },
+  "homepage": "https://github.com/dolthub/label-customer-issues#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/exec": "^1.1.1",
+    "@actions/github": "^5.1.1",
+    "@actions/http-client": "^2.0.1",
+    "@actions/io": "^1.1.2",
+    "@actions/tool-cache": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.4",
+    "jest": "^24.8.0",
+    "jest-circus": "^24.7.1",
+    "prettier": "^1.17.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^4.9.5"
+  }
+}

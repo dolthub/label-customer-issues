@@ -1,0 +1,17 @@
+name: 'Label customer issues'
+description: 'Label issues and pull requests from requesters outside of the project team'
+author: 'DoltHub'
+inputs:
+  repo-token:
+    description: 'Token for the repository. Can be passed in using {{ secrets.GITHUB_TOKEN }}'
+    required: true
+  issue-label:
+    description: 'Label to apply to issues from requesters outside the project'
+  pr-label:
+    description: 'Label to apply to PRs from requesters outside the project'
+  exclude:
+    description: 'A comma-separated list of requesters to exclude from labeling (e.g. dependabot)'
+runs:
+    using: 'node16'
+    main: 'dist/index.js'
+
