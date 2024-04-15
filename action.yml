@@ -12,6 +12,6 @@ inputs:
   exclude:
     description: 'A comma-separated list of requesters to exclude from labeling (e.g. dependabot)'
 runs:
-    using: 'node16'
+    using: 'node20'
     main: 'dist/index.js'
 
